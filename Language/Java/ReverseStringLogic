@@ -1,0 +1,33 @@
+import java.util.*;
+
+/**
+ * 
+ * @author sathish.saminathan
+ *
+ */
+class ReverseStringLogic {
+
+/**
+	 * This main method will get a string as input and provide reverse of the string as output in console.
+	 * Reverse string logic is used without using predefined function for reversing a string 
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		String original, reverse = "";
+    
+    //Get Input string
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a string to reverse");
+		original = input.nextLine();
+
+		int length = original.length();
+
+		for (int i = length - 1; i >= 0; i--)
+			reverse = reverse + original.charAt(i);
+      
+		//Printing reversed String
+		System.out.println("Reverse of entered string is: " + reverse);
+
+		input.close();
+	}
+}
