@@ -9,13 +9,13 @@ class ReverseStringLogic {
 
 /**
 	 * This main method will get a string as input and provide reverse of the string as output in console.
-	 * Reverse string logic is used without using predefined function for reversing a string 
+	 * Reverse string logic is used without using predefined methods in java for reversing a string 
 	 * @param args
 	 */
 	public static void main(String args[]) {
 		String original, reverse = "";
     
-    //Get Input string
+    		//Get Input string
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a string to reverse");
 		original = input.nextLine();
